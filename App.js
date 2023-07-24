@@ -1,15 +1,17 @@
+
 import React from 'react'
-import Employee from './Employee'
-function App() {
-  return (
-    <div>
-    <h1>Employee</h1>
-    <h2>Movie</h2>
-    <h3>Course</h3>
-    <Employee/>
-    </div>
-
-  )
+import Message from './Components/Message'
+import Order from './Components/Order'
+class App extends React.Component{
+render(){
+  return<div>
+    <h2>App comp</h2>
+    <hr/>
+    <Message/>
+    <hr/>
+    <Order/>
+  
+  </div>
 }
-
+}
 export default App
