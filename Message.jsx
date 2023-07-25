@@ -1,16 +1,20 @@
-import React from 'react';
-
-class Message extends React.Component {
-    msg = "GM"
-    price = 400;
-    render() {
-        console.log("First Render method")
+import React, { Component } from "react";
+class Message extends Component{
+    state={msg:"hello"}
+    gmHandler=()=>{
+        this.setState({msg:"GM madhu"})
+    }
+    gnHandler=()=>{
+        this.setState({msg:"GN sudha"})
+    }
+    render(){
+        console.log("first")
         return <div>
             <h1>Message Component</h1>
-            <h3>Wish Message: {this.msg}</h3>
-            <h3>Price: {this.price}</h3>
+            <h2>Message value:{this.state.msg}</h2>
+            <button onClick={this.gmHandler}>GM</button>
+            <button onClick={this.gnHandler}>GN</button>
         </div>
     }
 }
-
 export default Message
