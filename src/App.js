@@ -1,16 +1,11 @@
-import Course from './Components/Course'
-import Employee from './Components/Employee'
-import Movie from './Components/Movie'
-let App=()=>{
-  return<div>
-    <h2>App comp</h2>
+
+import React from "react"
+import Message from './Components/Message'
+const App=()=>{
+  return <div>
+    <h2>App Components</h2>
     <hr/>
-    <Employee/>
-    <hr/>
-    <Movie/>
-    <hr/>
-    <Course/>
-  
+    <Message/>
   </div>
 }
 export default App
